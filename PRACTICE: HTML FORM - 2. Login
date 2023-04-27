@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        .error-icon {
+            display: none;
+            width: 16px;
+            height: 16px;
+            background-color: yellow;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 16px;
+            color: white;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var username = document.forms["loginForm"]["username"].value;
+            var password = document.forms["loginForm"]["password"].value;
+            
+            if (username === "" || password === "") {
+                var errorIcon = document.getElementById("error-icon");
+                errorIcon.style.display = "inline";
+                alert("Please fill out this field.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+	<h1>Log In </h1>
+    <form name="loginForm" action="your_html_file.html" method="get" onsubmit="return validateForm()">
+    
+    	
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <span id="error-icon" class="error-icon">&#9888;</span>
+        
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>

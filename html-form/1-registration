@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="your_html_file.html" method="get">
+    
+    	<h1>Register</h1>
+        
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="Firstname" required><br><br>
+        
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="Lastname" required><br><br>
+        
+        <h1>Login Credentials</h1>
+        
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="Username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="Password" required><br><br>
+        
+        <label for="confirm">Confirm Password:</label>
+        <input type="password" id="confirm" name="Confirm" required><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
